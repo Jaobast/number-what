@@ -1,35 +1,29 @@
 *{
     margin: 0;
 }
-html, body {
-    height: 100vh;
-    width: 100vw;
+html{
+    height: -webkit-fill-available;
 }
 
-body {
+body{
+    max-height: 100vh;
     margin: 0;
-    background-color: #061a49;
-    height: 100vh;
+    height: -webkit-fill-available;
 }
-
-#titel {
+#choose{
     display: flex;
-    flex-direction: column;
-    position:absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    background-color: #fa897b;
+    flex-direction: row;
+    justify-content: center;
 }
 
-h1{
-    font-size: 35px;
-}
-.untertitel{
-    font-size: 21px;
+.h1{
+    font-size: 25pt;
+    margin: 2vw;
+    padding: 1vw;
+    color: rgb(0, 0, 0);
 }
 
-#game {
+.yourChoise{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,16 +31,68 @@ h1{
     left: 50%;
     transform: translateX(-50%);
     bottom:40%;
-    background-color: #fa897b;
 }
 
-.goButton {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+#yourChoise{
+    font-size: 15pt;
+    margin: 10px;
+}
+
+#gif{
+    width: 150px;
+    height: auto;
     border: none;
-    background-color: #fa897b;
-    color: white;
-    margin: 2vh;
-    
+}
+
+#divas{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    bottom: 15vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+button{
+    border:none;
+    background-color: rgb(0, 0, 0, 0);
+    color: black;
+    font-size: 15pt;
+    padding: 1vw;
+}
+
+.h1:hover{
+    font-size: 27pt;
+}
+
+button:hover{
+    color: rgb(230, 174, 228);
+    transform: translateY(-0.5vw);
+    cursor: pointer;
+    font-size: 17pt;
+}
+
+
+
+@media (hover: none) {
+    .h1:hover{
+        font-size: 25pt;
+    }
+    button:hover{
+        color: black;
+        transform: translateY(0px);
+        cursor:none;
+        font-size: 12pt;
+    }
+    #gif{
+        width: 400px;
+        height: auto;
+        border: none;
+    }
+    #yourChoise{
+        font-size: 15pt;
+    }
 }
