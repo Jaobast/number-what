@@ -1,14 +1,17 @@
 <!doctype html>
 <html>
   <head>
-    <title>a title</title>
+    <title>Guess The Nummer</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <div class="container">
-      <h1>Game</h1>
+    <div id="titel">
+      <h1>Guess The Nummer</h1>
       <p>Guess a number between 1 and 100</p>
-      <input type="number" id="guess"> 
-      <button onclick="checkGuess()">submit</button>
+    </div>
+    <div id="game">
+      <input type="number" class="guess"> 
+      <button onclick="checkGuess()" class="goButton">go</button>
       <p id="feedback"></p>
     </div>
     <script src="./script/script.js"></script>

@@ -1,7 +1,7 @@
 let randomNumber = Math.floor(Math.random() * 100) + 1;
 
 function checkGuess() {
-  let inputElement = document.getElementById('guess');
+  let inputElement = document.querySelector(".guess");
   let feedbackElement = document.getElementById('feedback');
   let guess = parseInt(inputElement.value);
 
