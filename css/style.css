@@ -8,15 +8,14 @@
 *{
     margin: 0;
 }
-html{
-    max-height: 100vh;
+html, body {
+    height: 100vh;
 }
 
-body{
+body {
+    margin: 0;
     background-color: #97b5fb;
     height: 100vh;
-    overflow-y: hidden;
-
 }
 
 #titel {
@@ -24,11 +23,10 @@ body{
     flex-direction: column;
     align-items: center;
     color: white;
-    margin-top: 3vh;
-}
-
-h1{
-    font-family: 'Silkscreen';
+    position:absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 5%;
 }
 
 #game {
