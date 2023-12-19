@@ -30,6 +30,13 @@ body {
     top: 5%;
 }
 
+h1{
+    font-size: 35px;
+}
+.untertitel{
+    font-size: 21px;
+}
+
 #game {
     position: absolute;
     top: 50%;
