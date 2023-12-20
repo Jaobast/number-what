@@ -57,5 +57,6 @@ h1{
     color: white;
     margin: 2vh;
     font-size: max(35px, 2vw);
+    text-align: center;
     
 }
