@@ -40,7 +40,7 @@ h1{
     position:absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 25vh;
+    bottom: 10vh;
 }
 
 .guess {
@@ -88,14 +88,14 @@ h1{
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    width: 16vw;
-    gap: 0.5vw;
+    width: min(30vw, 220px);
+    gap: min(0.5vw, 20px);
   }
 
   .button {
-    width: 4vw;
-    height: 4vw;
-    font-size: 18px;
+    width: min(8vw, 60px);
+    height: min(8vw, 60px);
+    font-size: max(18px, 2vw);
     cursor: pointer;
     border: 1px solid #ccc;
     border-radius: 5px;
