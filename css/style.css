@@ -49,8 +49,8 @@ h1{
 }
 
 .goButton {
-    width: min(80px, 15vw);
-    height: min(80px, 15vh);;
+    width: min(80px, 12vw);
+    height: min(80px, 12vw);;
     border-radius: 50%;
     border: none;
     background-color: #fa897b;
