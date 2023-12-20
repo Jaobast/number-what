@@ -26,10 +26,10 @@ body {
 }
 
 h1{
-    font-size: max(5vw, 7vw);
+    font-size: max(50px, 7vw);
 }
 .untertitel{
-    font-size: max(1vw, 3vw);
+    font-size: max(25px, 3vw);
 }
 
 #game {
