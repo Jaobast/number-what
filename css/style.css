@@ -14,17 +14,20 @@ body {
 }
 
 #titel {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     position:absolute;
     left: 50%;
     top: 20px;
     transform: translateX(-50%);
     color: white;
+    font-size: min(3vw, 7vw);
 }
 
 h1{
-    font-size: 35px;
+
 }
 .untertitel{
     font-size: 21px;
