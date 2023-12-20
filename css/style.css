@@ -21,7 +21,7 @@ body {
     align-items: center;
     position:absolute;
     left: 50%;
-    top: 20px;
+    top: 3vw;
     transform: translateX(-50%);
     color: white;
 }
@@ -40,7 +40,7 @@ h1{
     position:absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 40%;
+    bottom: 25vh;
 }
 
 .guess {
