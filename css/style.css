@@ -30,7 +30,7 @@ h1{
     font-size: max(50px, 5vw);
 }
 .untertitel{
-    font-size: max(25px, 2vw);
+    font-size: max(25px, 5vw);
 }
 
 #game {
@@ -49,13 +49,13 @@ h1{
 }
 
 .goButton {
-    width: min(80px, 12vw);
-    height: min(80px, 12vw);;
+    width: min(80px, 15vw);
+    height: min(80px, 15vw);;
     border-radius: 50%;
     border: none;
     background-color: #fa897b;
     color: white;
     margin: 2vh;
-    font-size: max(25px, 2vw);
+    font-size: max(25px, 5vw);
     
 }
