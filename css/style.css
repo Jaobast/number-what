@@ -11,6 +11,7 @@ body {
     margin: 0;
     background-color: #97b5fb;
     height : 100vh;
+    height: -webkit-fill-available;
 }
 
 #titel {
