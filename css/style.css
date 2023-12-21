@@ -49,8 +49,8 @@ h1{
 }
 
 .goButton {
-    width: min(80px, 15vw);
-    height: min(80px, 15vw);;
+    width: min(80px, 18vw);
+    height: min(80px, 18vw);;
     border-radius: 50%;
     border: none;
     background-color: #fa897b;
@@ -88,18 +88,19 @@ h1{
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    width: min(30vw, 220px);
+    width: min(47vw, 220px);
     gap: min(0.5vw, 20px);
   }
 
   .button {
-    width: min(8vw, 60px);
-    height: min(8vw, 60px);
-    font-size: max(18px, 2vw);
+    width: min(15vw, 60px);
+    height: min(15vw, 60px);
+    font-size: max(35px, 2vw);
     cursor: pointer;
-    border: 1px solid #ccc;
+    border: 1px;
     border-radius: 5px;
     background-color: #f9f9f9;
+    color:#97b5fb;
     display: flex;
     flex-direction: row;
     justify-content: center;
