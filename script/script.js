@@ -1,8 +1,8 @@
 let randomNumber = generateRandomNumber();
+let attempts = 10;
 
 function generateRandomNumber() {
-  return Math.floor(Math.random() * 100) + 1;
-}
+  return Math.floor(Math.random() * 100) + 1;}
 
 function checkGuess() {
   let inputElement = document.getElementById('display');
@@ -10,25 +10,39 @@ function checkGuess() {
   let display = inputElement.textContent.trim();
 
   if (display === randomNumber.toString()) {
-    feedbackElement.innerHTML = "Good guess!";
-    feedbackElement.style.color = "green";
-  } else if (parseInt(display) < randomNumber) {
-    feedbackElement.innerHTML = "Too low! Try again.";
-    feedbackElement.style.color = "red";
-  } else {
-    feedbackElement.innerHTML = "Too high! Try again.";
-    feedbackElement.style.color = "red";
-  }
+    feedbackElement.innerHTML = "Good girl!";
+    feedbackElement.style.color = "green";}
 
-  clearDisplay(); 
-}
+  else if (parseInt(display) < randomNumber) {
+    feedbackElement.innerHTML = "Too low! You still have " + (attempts -1) + " chances";
+    feedbackElement.style.color = "red";
+    attempts = attempts - 1;
+
+       if (attempts > 0) {
+       clearDisplay();}
+       
+       else {
+       feedbackElement.innerHTML = "Game Over";
+       feedbackElement.style.color = "red";}}
+      
+  else {
+    feedbackElement.innerHTML = "Too high! You still have " + (attempts -1) + " chances";
+    feedbackElement.style.color = "red";
+    attempts = attempts - 1;
+
+       if (attempts > 0) {
+       clearDisplay();}
+       
+       else {
+       feedbackElement.innerHTML = "Game Over";
+       feedbackElement.style.color = "red";}}}
+
+
 
 let display = document.getElementById('display');
 
-function addToDisplay(value) {
-  display.textContent += value;
-}
+function addToDisplay(number) {
+  display.textContent += number;}
 
 function clearDisplay() {
-  display.textContent = '';
-}
+  display.textContent = '';}
