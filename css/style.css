@@ -97,14 +97,14 @@ h1{
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    width: 68vw;
-    gap: 0.5vw;
+    width: 220px;
+    gap: min(0.5vw, 20px);
   }
 
   .button {
-    width: 22vw;
-    height: 22vw;
-    font-size: max(35px, 2vw);
+    width: 60px;
+    height:60px;
+    font-size: 35px;
     cursor: pointer;
     border: 1px;
     border-radius: 5px;
@@ -114,4 +114,17 @@ h1{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+  }
+
+  @media (max-width: 800px) {
+    #numpad {
+      width: 70vw;
+      gap: 0.5vw;
+    }
+  
+    .button {
+      width: 22vw;
+      height: 22vw;
+      font-size: 10vw;
+    }
   }
