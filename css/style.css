@@ -76,9 +76,6 @@ h1{
     cursor: pointer;
 }
 
-
-
-
 #display {
     width: 12vw;
     height: 30px;
@@ -100,13 +97,13 @@ h1{
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    width: min(68vw, 220px);
-    gap: min(0.5vw, 20px);
+    width: 68vw;
+    gap: 0.5vw;
   }
 
   .button {
-    width: min(22vw, 60px);
-    height: min(22vw, 60px);
+    width: 22vw;
+    height: 22vw;
     font-size: max(35px, 2vw);
     cursor: pointer;
     border: 1px;
