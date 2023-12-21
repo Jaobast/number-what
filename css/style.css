@@ -118,13 +118,13 @@ h1{
 
   @media (max-width: 800px) {
     #numpad {
-      width: 70vw;
-      gap: 0.5vw;
+      width: 65vw;
+      gap: 2vw;
     }
   
     .button {
-      width: 22vw;
-      height: 22vw;
+      width: 20vw;
+      height: 20vw;
       font-size: 10vw;
     }
   }
