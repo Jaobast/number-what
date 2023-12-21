@@ -100,13 +100,13 @@ h1{
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    width: min(47vw, 220px);
+    width: min(68vw, 220px);
     gap: min(0.5vw, 20px);
   }
 
   .button {
-    width: min(15vw, 60px);
-    height: min(15vw, 60px);
+    width: min(22vw, 60px);
+    height: min(22vw, 60px);
     font-size: max(35px, 2vw);
     cursor: pointer;
     border: 1px;
