@@ -1,5 +1,5 @@
 let randomNumber = generateRandomNumber();
-let attempts = 10;
+let attempts = 7;
 
 function generateRandomNumber() {
   return Math.floor(Math.random() * 100) + 1;}
