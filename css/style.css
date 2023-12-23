@@ -51,7 +51,7 @@ h1{
     position:absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 5vh;
+    bottom: 7vh;
 }
 
 .guess {
@@ -84,6 +84,7 @@ h1{
     border: 1px;
     border-radius: 5px;
     background-color: #fa897b;
+    color: white;
     padding: 1vh;
     font-family: Arial, sans-serif;
     display: flex;
@@ -126,7 +127,14 @@ h1{
     #display {
         width: 36vw;
         height: 30px;
-      }
+        font-size: 4vw;
+    }
+
+    .goButton {
+        width: 12vw;
+        height: 12vw;
+        font-size: 6vw;
+    }
   
     .button {
       width: 12vw;
