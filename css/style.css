@@ -41,7 +41,7 @@ h1{
     position:absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 5vh;
+    bottom: 2vh;
 }
 
 #game {
@@ -139,5 +139,9 @@ h1{
     }
     .untertitel{
         font-size: 5vw;
+    }
+    #feedback{
+        font-size: 4vw;
+        width: 100vw;
     }
   }
