@@ -11,7 +11,11 @@ function checkGuess() {
 
   if (display === randomNumber.toString()) {
     feedbackElement.innerHTML = "Good girl!";
-    feedbackElement.style.color = "green";}
+    feedbackElement.style.color = "green";
+    const changeChances = document.querySelector('.chances');
+    changeChances.innerHTML= "You have five chances";
+  }
+
 
   else if (parseInt(display) < randomNumber) {
     feedbackElement.innerHTML = "Too low! You still have " + (attempts -1) + " chances";

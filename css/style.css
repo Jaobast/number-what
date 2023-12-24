@@ -29,7 +29,7 @@ body {
 h1{
     font-size: max(50px, 5vw);
 }
-.untertitel{
+.chances, .rand{
     font-size: max(45px, 3vw);
 }
 
@@ -145,7 +145,7 @@ h1{
     h1{
         font-size: 7vw;
     }
-    .untertitel{
+    .chances, .rand{
         font-size: 4.1vw;
     }
     #feedback{
