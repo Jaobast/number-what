@@ -1,0 +1,201 @@
+  *{
+    margin: 0;
+}
+html, body {
+    height: 100vh;
+    width: 100vw;
+    height: -webkit-fill-available;
+}
+
+body {
+    margin: 0;
+    background-color:#fa897b;
+    height: 100vh;
+    height: -webkit-fill-available;
+  }
+
+  .blur{
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 10;
+  }
+
+  .video_goodGirl{
+    position: absolute;
+    width:60vw;
+    height: 60vw;
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    object-fit: cover;
+  }
+
+  .goodGirl_button{
+    position: absolute;
+    top: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    z-index: 1000;
+    gap: 20px;
+  }
+
+  .next_button{
+    width: 120px;
+    text-align: center;
+    padding: 7px;
+    border-radius: 50px;
+    border-style: none;
+    background-color: white;
+    color:#fa897b;
+  }
+
+#titel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:absolute;
+    left: 50%;
+    top: 6vw;
+    transform: translateX(-50%);
+    color: white;
+}
+
+h1{
+    font-size: max(50px, 5vw);
+}
+.chances, .rand{
+    font-size: max(45px, 3vw);
+}
+
+#feedback{
+    font-size: min(45px, 2vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2vh;
+}
+
+#game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 7vh;
+    z-index: -10;
+}
+
+.guess {
+    width: min(130px, 20vw);
+    height: min(35px, 10vh);
+    z-index: 0;
+}
+
+.goButton {
+    width: min(80px, 18vw);
+    height: min(80px, 18vw);;
+    border-radius: 50%;
+    border: none;
+    background-color:#97b5fb;
+    color: white;
+    margin: 2vh;
+    font-size: max(35px, 2vw);
+    text-align: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#display {
+    width: 12vw;
+    height: 30px;
+    margin-bottom: 10px;
+    text-align: right;
+    border: 1px;
+    border-radius: 5px;
+    background-color:#97b5fb;
+    color: white;
+    padding: 1vh;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1vh; 
+  }
+
+  #numpad {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 220px;
+    gap: min(0.5vw, 20px);
+  }
+
+  .button {
+    width: 60px;
+    height:60px;
+    font-size: 35px;
+    cursor: pointer;
+    border: 1px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color:#fa897b;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 800px) {
+    
+      #numpad {
+      width: 50vw;
+      gap: 1.5vw;
+    }
+
+    #display {
+        width: 36vw;
+        height: 30px;
+        font-size: 4vw;
+    }
+
+    .goButton {
+        width: 12vw;
+        height: 12vw;
+        font-size: 6vw;
+    }
+  
+    .button {
+      width: 12vw;
+      height: 12vw;
+      font-size: 6vw;
+    }
+
+    h1{
+        font-size: 7vw;
+    }
+    .next_button{
+        font-size: 3,5vw;
+    }
+    .chances, .rand{
+        font-size: 4.1vw;
+    }
+    #feedback{
+        font-size: 4vw;
+        width: 100vw;
+    }
+  }
