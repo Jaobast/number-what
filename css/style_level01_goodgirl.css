@@ -17,7 +17,6 @@ body {
   .blur{
     width: 100vw;
     height: 100vh;
- 
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     z-index: 10;
@@ -25,24 +24,22 @@ body {
 
   .video_goodGirl{
     position: absolute;
-    width: 300px;
-    height: 300px;
-    top: 10%;
+    width:60vw;
+    height: 60vw;
+    top: 7%;
     left: 50%;
     transform: translateX(-50%);
-    overflow: hidden;
     z-index: 100;
     object-fit: cover;
   }
 
   .goodGirl_button{
     position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 30%;
     display: flex;
     flex-direction: row;
-    width: 60%;
+    justify-content: center;
+    width: 100%;
     z-index: 1000;
     gap: 20px;
   }
@@ -164,7 +161,8 @@ h1{
   }
 
   @media (max-width: 800px) {
-    #numpad {
+    
+      #numpad {
       width: 50vw;
       gap: 1.5vw;
     }
@@ -190,7 +188,7 @@ h1{
     h1{
         font-size: 7vw;
     }
-    .chances, .rand{
+    .chances, .rand, .next_button{
         font-size: 4.1vw;
     }
     #feedback{
