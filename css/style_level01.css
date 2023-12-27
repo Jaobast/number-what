@@ -33,19 +33,6 @@ h1{
     font-size: max(45px, 3vw);
 }
 
-.video_goodGirl{
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    overflow: hidden;
-    z-index: 2;
-    opacity: 60%;
-    object-fit: cover;
-  }
-
 #feedback{
     font-size: min(45px, 2vw);
     display: flex;
