@@ -9,7 +9,7 @@ html, body {
 
 body {
     margin: 0;
-    background-color: #97b5fb;
+    background-color: #fa897b;
     height : 100vh;
     height: -webkit-fill-available;
 }
@@ -64,7 +64,7 @@ h1{
     height: min(80px, 18vw);;
     border-radius: 50%;
     border: none;
-    background-color: #fa897b;
+    background-color: #97b5fb;
     color: white;
     margin: 2vh;
     font-size: max(35px, 2vw);
@@ -83,7 +83,7 @@ h1{
     text-align: right;
     border: 1px;
     border-radius: 5px;
-    background-color: #fa897b;
+    background-color: #97b5fb;
     color: white;
     padding: 1vh;
     font-family: Arial, sans-serif;
@@ -111,7 +111,7 @@ h1{
     border: 1px;
     border-radius: 5px;
     background-color: #f9f9f9;
-    color:#97b5fb;
+    color:#fa897b;
     display: flex;
     flex-direction: row;
     justify-content: center;

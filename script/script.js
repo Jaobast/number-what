@@ -3,6 +3,7 @@ let attempts = 7;
 
 function generateRandomNumber() {
   return Math.floor(Math.random() * 100) + 1;}
+  console.log(randomNumber);
 
 function checkGuess() {
   let inputElement = document.getElementById('display');
@@ -10,10 +11,13 @@ function checkGuess() {
   let display = inputElement.textContent.trim();
 
   if (display === randomNumber.toString()) {
-    feedbackElement.innerHTML = "Good girl!";
-    feedbackElement.style.color = "green";
     const changeChances = document.querySelector('.chances');
     changeChances.innerHTML= "You have five chances";
+    const changeCss = document.getElementById('css')
+    const changeGif = document.querySelector('.video_goodGirl');
+    changeCss.setAttribute("href", "./css/style_level01_goodgirl.css");
+    changeGif.setAttribute("src", "./video/goodGirl.gif")
+    
   }
 
 
