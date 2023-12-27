@@ -1,5 +1,6 @@
 let randomNumber = generateRandomNumber();
 let attempts = 10;
+let level = "level01";
 
 function generateRandomNumber() {
   return Math.floor(Math.random() * 100) + 1;}
@@ -13,13 +14,13 @@ function checkGuess() {
   if (display === randomNumber.toString()) {
     feedbackElement.innerHTML = "";
     const changeCss = document.getElementById('css');
-    changeCss.setAttribute("href", "./css/style_level01_goodgirl.css");
+    changeCss.setAttribute("href", "./css/style_" + level +"_goodgirl.css");
     const changeGif = document.querySelector('.video_goodGirl');
     changeGif.setAttribute("src", "./video/goodGirl.gif")
 
-    const stayButton = document.getElementById('stay_button');
+    const stayButton = document.getElementById('level01');
       
-    const nextButton = document.getElementById('next_button');
+    const nextButton = document.getElementById('level02');
 
   
     stayButton.innerHTML = "PRACTICE MORE LEVEL I";
@@ -41,7 +42,7 @@ function checkGuess() {
        changeGif.setAttribute("src", "./video/gameOver.gif")
        const changeCss = document.getElementById('css');
        changeCss.setAttribute("href", "./css/style_level01_gameover.css");
-       const stayButton = document.getElementById('stay_button');
+       const stayButton = document.getElementById('level01');
        stayButton.innerHTML = "TRY AGAIN";}}
       
   else {
@@ -58,7 +59,7 @@ function checkGuess() {
         changeGif.setAttribute("src", "./video/gameOver.gif")
         const changeCss = document.getElementById('css');
         changeCss.setAttribute("href", "./css/style_level01_gameover.css");
-        const stayButton = document.getElementById('stay_button');
+        const stayButton = document.getElementById('level01');
         stayButton.innerHTML = "TRY AGAIN";}}}
 
 
@@ -76,6 +77,7 @@ function stay() {
   }
 
   function next() {
+    level = "level02";
     randomNumber = generateRandomNumber();
     attempts = 7;
 
@@ -88,17 +90,12 @@ function stay() {
     const changeChanges = document.querySelector('.chances');
     changeChanges.innerHTML = "You have seven chances"
   
-    const stayButton = document.getElementById('stay_button');
+    const stayButton = document.getElementById('level01');
     stayButton.innerHTML = '';
 
-    const nextButton = document.getElementById('next_button');
+    const nextButton = document.getElementById('level02');
     nextButton.innerHTML = '';
 
-    if (display === randomNumber.toString()) {
-      feedbackElement.innerHTML = "";
-      const changeCss = document.getElementById('css');
-      changeCss.setAttribute("href", "./css/style_level02_goodgirl.css");}
-  
     clearDisplay();
     console.log(randomNumber);
          }
