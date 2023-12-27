@@ -36,8 +36,13 @@ function checkGuess() {
        clearDisplay();}
        
        else {
-       feedbackElement.innerHTML = "Game Over";
-       feedbackElement.style.color = "red";}}
+       feedbackElement.innerHTML = "";
+       const changeGif = document.querySelector('.video_goodGirl');
+       changeGif.setAttribute("src", "./video/gameOver.gif")
+       const changeCss = document.getElementById('css');
+       changeCss.setAttribute("href", "./css/style_level01_gameover.css");
+       const stayButton = document.getElementById('stay_button');
+       stayButton.innerHTML = "TRY AGAIN";}}
       
   else {
     feedbackElement.innerHTML = "Too high! You still have " + (attempts -1) + " chances";
@@ -48,8 +53,13 @@ function checkGuess() {
        clearDisplay();}
        
        else {
-       feedbackElement.innerHTML = "Game Over";
-       feedbackElement.style.color = "red";}}}
+        feedbackElement.innerHTML = "";
+        const changeGif = document.querySelector('.video_goodGirl');
+        changeGif.setAttribute("src", "./video/gameOver.gif")
+        const changeCss = document.getElementById('css');
+        changeCss.setAttribute("href", "./css/style_level01_gameover.css");
+        const stayButton = document.getElementById('stay_button');
+        stayButton.innerHTML = "TRY AGAIN";}}}
 
 
 
@@ -62,29 +72,7 @@ function clearDisplay() {
   display.textContent = '';}
 
 function stay() {
-    const changeCss = document.getElementById('css');
-    changeCss.setAttribute("href", "./css/style_level01.css");
-
-    const changeGif = document.querySelector('.video_goodGirl');
-    changeGif.setAttribute("src", "")
-
-    randomNumber = generateRandomNumber();
-    attempts = 7;
-
-    const feedbackElement = document.getElementById('feedback');
-    feedbackElement.innerHTML = '';
-    feedbackElement.style.color = '';
-  
-    const stayButton = document.getElementById('stay_button');
-    stayButton.innerHTML = '';
-    stayButton.classList.remove('next_button');
-
-    const nextButton = document.getElementById('next_button');
-    nextButton.innerHTML = '';
-    nextButton.classList.remove('next_button');
-  
-    clearDisplay();
-    console.log(randomNumber);
+  location.reload();
   }
 
   function next() {
