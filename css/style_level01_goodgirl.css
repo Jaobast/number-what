@@ -45,7 +45,7 @@ body {
   }
 
   .next_button{
-    width: 150px;
+    width: 120px;
     text-align: center;
     padding: 7px;
     border-radius: 50px;
@@ -188,7 +188,10 @@ h1{
     h1{
         font-size: 7vw;
     }
-    .chances, .rand, .next_button{
+    .next_button{
+        font-size: 3,5vw;
+    }
+    .chances, .rand,{
         font-size: 4.1vw;
     }
     #feedback{
