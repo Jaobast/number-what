@@ -11,13 +11,19 @@ function checkGuess() {
   let display = inputElement.textContent.trim();
 
   if (display === randomNumber.toString()) {
-    const changeChances = document.querySelector('.chances');
-    changeChances.innerHTML= "You have five chances";
-    const changeCss = document.getElementById('css')
-    const changeGif = document.querySelector('.video_goodGirl');
+    feedbackElement.innerHTML = "";
+    const changeCss = document.getElementById('css');
     changeCss.setAttribute("href", "./css/style_level01_goodgirl.css");
+    const changeGif = document.querySelector('.video_goodGirl');
     changeGif.setAttribute("src", "./video/goodGirl.gif")
-    
+
+    const stayButton = document.getElementById('stay_button');
+      
+    const nextButton = document.getElementById('next_button');
+
+  
+    stayButton.innerHTML = "PRACTICE MORE LEVEL I";
+    nextButton.innerHTML = "I'M READY FOR LEVEL II";
   }
 
 
