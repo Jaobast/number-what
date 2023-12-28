@@ -41,10 +41,9 @@ body {
     justify-content: center;
     width: 100%;
     z-index: 1000;
-    gap: 20px;
   }
 
-  .next_button{
+  #level01, #level02, #level03{
     width: 120px;
     text-align: center;
     padding: 7px;
@@ -52,6 +51,7 @@ body {
     border-style: none;
     background-color: white;
     color:#fa897b;
+    margin: 10px;
   }
 
 #titel {

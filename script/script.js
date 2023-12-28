@@ -18,12 +18,12 @@ function checkGuess() {
     const changeGif = document.querySelector('.video_goodGirl');
     changeGif.setAttribute("src", "./video/goodGirl.gif")
 
-    const stayButton = document.getElementById('level01');
-    const nextButton = document.getElementById('level02');
+    const goLevel01 = document.getElementById('level01');
+    const goLevel02 = document.getElementById('level02');
 
   
-    stayButton.innerHTML = "PRACTICE MORE";
-    nextButton.innerHTML = "I'M READY NEXT LEVEL";
+    goLevel01.innerHTML = "Level I";
+    goLevel02.innerHTML = "Level II";
   }
 
 
@@ -71,30 +71,65 @@ function addToDisplay(number) {
 function clearDisplay() {
   display.textContent = '';}
 
-function stay() {
-  location.reload();
-  }
 
-  function next() {
-    level = "level02";
-    randomNumber = generateRandomNumber();
-    attempts = 7;
-
-    const changeCss = document.getElementById('css');
-    changeCss.setAttribute("href", "./css/style_level02.css");
-
-    const changeGif = document.querySelector('.video_goodGirl');
-    changeGif.setAttribute("src", "")
-
-    const changeChanges = document.querySelector('.chances');
-    changeChanges.innerHTML = "You have seven chances"
   
-    const stayButton = document.getElementById('level01');
-    stayButton.innerHTML = '';
 
-    const nextButton = document.getElementById('level02');
-    nextButton.innerHTML = '';
+function level01() {
+  location.reload();
+}
 
-    clearDisplay();
-    console.log(randomNumber);
-         }
+function level02() {
+  level = "level02";
+  randomNumber = generateRandomNumber();
+  attempts = 7;
+
+  const changeCss = document.getElementById('css');
+  changeCss.setAttribute("href", "./css/style_" + level + ".css");
+
+  const changeGif = document.querySelector('.video_goodGirl');
+  changeGif.setAttribute("src", "")
+
+  const changeChanges = document.querySelector('.chances');
+  changeChanges.innerHTML = "You have seven chances"
+  
+  const stayButton = document.getElementById('level01');
+  stayButton.innerHTML = '';
+
+  const nextButton = document.getElementById('level02');
+  nextButton.innerHTML = '';
+
+  const goLevel03 = document.getElementById('level03');
+  goLevel03.innerHTML = "Level III";
+
+  clearDisplay();
+  console.log(randomNumber);
+}
+
+
+function level03() {
+  level = "level03";
+  randomNumber = generateRandomNumber();
+  attempts = 5;
+      
+  const changeCss = document.getElementById('css');
+  changeCss.setAttribute("href", "./css/style_" + level + ".css");
+      
+  const changeGif = document.querySelector('.video_goodGirl');
+  changeGif.setAttribute("src", "")
+      
+  const changeChanges = document.querySelector('.chances');
+  changeChanges.innerHTML = "You have five chances"
+        
+  const stayButton = document.getElementById('level01');
+  stayButton.innerHTML = '';
+      
+  const nextButton = document.getElementById('level02');
+  nextButton.innerHTML = '';
+      
+  const goLevel03 = document.getElementById('level03');
+  goLevel03.innerHTML = "Level III";
+      
+  clearDisplay();
+  console.log(randomNumber);
+}         
+   

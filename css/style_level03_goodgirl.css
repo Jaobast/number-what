@@ -1,4 +1,4 @@
-*{
+  *{
     margin: 0;
 }
 html, body {
@@ -10,9 +10,49 @@ html, body {
 body {
     margin: 0;
     background-color:black;
-    height : 100vh;
+    height: 100vh;
     height: -webkit-fill-available;
-}
+  }
+
+  .blur{
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 10;
+  }
+
+  .video_goodGirl{
+    position: absolute;
+    width:60vw;
+    height: 60vw;
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    object-fit: cover;
+  }
+
+  .goodGirl_button{
+    position: absolute;
+    top: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  #level01, #level02, #level03{
+    width: 120px;
+    text-align: center;
+    padding: 7px;
+    border-radius: 50px;
+    border-style: none;
+    background-color:#97b5fb;
+    color:black;
+    margin: 10px;
+  }
 
 #titel {
     width: 100%;
@@ -52,11 +92,13 @@ h1{
     left: 50%;
     transform: translateX(-50%);
     bottom: 7vh;
+    z-index: -10;
 }
 
 .guess {
     width: min(130px, 20vw);
     height: min(35px, 10vh);
+    z-index: 0;
 }
 
 .goButton {
@@ -119,7 +161,8 @@ h1{
   }
 
   @media (max-width: 800px) {
-    #numpad {
+    
+      #numpad {
       width: 50vw;
       gap: 1.5vw;
     }
@@ -144,6 +187,9 @@ h1{
 
     h1{
         font-size: 7vw;
+    }
+    .next_button{
+        font-size: 3,5vw;
     }
     .chances, .rand{
         font-size: 4.1vw;
