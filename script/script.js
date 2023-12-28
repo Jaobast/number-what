@@ -22,8 +22,8 @@ function checkGuess() {
     const nextButton = document.getElementById('level02');
 
   
-    stayButton.innerHTML = "PRACTICE MORE LEVEL I";
-    nextButton.innerHTML = "I'M READY FOR LEVEL II";
+    stayButton.innerHTML = "LET'S PRACTICE MORE";
+    nextButton.innerHTML = "I'M READY NEXT LEVEL";
   }
 
 
