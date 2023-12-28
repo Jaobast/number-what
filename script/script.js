@@ -22,7 +22,7 @@ function checkGuess() {
     const nextButton = document.getElementById('level02');
 
   
-    stayButton.innerHTML = "LET'S PRACTICE MORE";
+    stayButton.innerHTML = "PRACTICE MORE";
     nextButton.innerHTML = "I'M READY NEXT LEVEL";
   }
 
