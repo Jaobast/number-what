@@ -58,7 +58,7 @@ function checkGuess() {
         const changeGif = document.querySelector('.video_goodGirl');
         changeGif.setAttribute("src", "./video/gameOver.gif")
         const changeCss = document.getElementById('css');
-        changeCss.setAttribute("href", "./css/style_level01_gameover.css");
+        changeCss.setAttribute("href", "./css/style_" + level + "_gameover.css");
         const stayButton = document.getElementById('level01');
         stayButton.innerHTML = "TRY AGAIN";}}}
 
