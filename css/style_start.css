@@ -32,7 +32,33 @@ body {
     transform: translateX(-50%);
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
+
+button{
+    width: 120px;
+    text-align: center;
+    padding: 7px;
+    border-radius: 50px;
+    border-style: none;
+    background-color: white;
+    color: #97b5fb;
+    margin: 10px;
+}
+
+#playerName{
+    border-style: none;
+    background-color: #fa897b;
+    text-align: center;
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+#playerName::placeholder {
+    color: white;
+    font-weight: bold;
+  }
 
 #video_goodGirl, .goodGirl_button, #game, #feedback{
     display: none;
@@ -72,4 +98,7 @@ body {
         font-size: 4vw;
         width: 100vw;
     }
+    #playerName::placeholder {
+        font-size: 5vw;
+      }
   }
