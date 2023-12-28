@@ -2,6 +2,13 @@ let randomNumber = generateRandomNumber();
 let attempts = 10;
 let level = "level01";
 
+function startGame() {
+  const changeCss = document.getElementById('css');
+  changeCss.setAttribute("href", "./css/style_level01.css");
+  
+  window.location.href = "./index.html";
+}
+
 function generateRandomNumber() {
   return Math.floor(Math.random() * 100) + 1;}
   console.log(randomNumber);
