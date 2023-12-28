@@ -25,6 +25,12 @@ body {
     color: white;
 }
 
+label{
+    color: white;
+    font-size: max(45px, 3vw);
+    margin: 10px;
+}
+
 #registration{
     position: absolute;
     top: 50%;
@@ -91,7 +97,7 @@ button{
     h1{
         font-size: 7vw;
     }
-    .chances, .rand{
+    label{
         font-size: 4.1vw;
     }
     #feedback{
