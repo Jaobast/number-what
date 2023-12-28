@@ -20,10 +20,14 @@ function checkGuess() {
 
     const goLevel01 = document.getElementById('level01');
     const goLevel02 = document.getElementById('level02');
+    const goLevel03 = document.getElementById('level03');
 
   
     goLevel01.innerHTML = "Level I";
     goLevel02.innerHTML = "Level II";
+
+    if (showLevel3Button) {
+      goLevel03.innerHTML = "Level III";}
   }
 
 
@@ -72,7 +76,7 @@ function clearDisplay() {
   display.textContent = '';}
 
 
-  
+
 
 function level01() {
   location.reload();
@@ -82,6 +86,7 @@ function level02() {
   level = "level02";
   randomNumber = generateRandomNumber();
   attempts = 7;
+  showLevel3Button = true;
 
   const changeCss = document.getElementById('css');
   changeCss.setAttribute("href", "./css/style_" + level + ".css");
@@ -98,9 +103,6 @@ function level02() {
   const nextButton = document.getElementById('level02');
   nextButton.innerHTML = '';
 
-  const goLevel03 = document.getElementById('level03');
-  goLevel03.innerHTML = "Level III";
-
   clearDisplay();
   console.log(randomNumber);
 }
@@ -110,6 +112,7 @@ function level03() {
   level = "level03";
   randomNumber = generateRandomNumber();
   attempts = 5;
+  showLevel3Button = true;
       
   const changeCss = document.getElementById('css');
   changeCss.setAttribute("href", "./css/style_" + level + ".css");
@@ -125,11 +128,12 @@ function level03() {
       
   const nextButton = document.getElementById('level02');
   nextButton.innerHTML = '';
-      
+
   const goLevel03 = document.getElementById('level03');
   goLevel03.innerHTML = "Level III";
+
       
   clearDisplay();
   console.log(randomNumber);
-}         
+}   
    
