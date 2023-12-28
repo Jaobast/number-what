@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Number What</title>
-  <link rel="stylesheet" href="./css/style_level01.css" id="css">
+  <link rel="stylesheet" href="./css/style_start.css" id="css">
 </head>
 <body>
 
@@ -11,41 +11,13 @@
 
   <div id="titel">
     <h1>NUMBER WHAT</h1>
-    <p class="rand">Guess a number between 1 and 100</p>
-    <p class="chances">You have ten chances</p>
   </div>
-
-  <div id="video_goodGirl">
-    <img class="video_goodGirl" src="">
+  
+  <div id="registration">
+    <label for="playerName">Enter your name:</label>
+    <input type="text" placeholder="Your Name" id="playerName" />
+    <button onclick="startGame()">Start Game</button>
   </div>
-
-  <div class="goodGirl_button">
-      <div id="level01" class="next_button" onclick="level01()"></div> 
-      <div id="level02" class="next_button" onclick="level02()"></div>
-      <div id="level03" class="next_button" onclick="level03()"></div>
-  </div>
-
-
-  <div id="game">
-    <div id="display"></div>
-    <div id="numpad">
-      <div class="button" onclick="addToDisplay('1')">1</div>
-      <div class="button" onclick="addToDisplay('2')">2</div>
-      <div class="button" onclick="addToDisplay('3')">3</div>
-      <div class="button" onclick="addToDisplay('4')">4</div>
-      <div class="button" onclick="addToDisplay('5')">5</div>
-      <div class="button" onclick="addToDisplay('6')">6</div>
-      <div class="button" onclick="addToDisplay('7')">7</div>
-      <div class="button" onclick="addToDisplay('8')">8</div>
-      <div class="button" onclick="addToDisplay('9')">9</div>
-      <div class="button" onclick="addToDisplay('0')">0</div>
-      <div class="button" onclick="addToDisplay('.')">.</div>
-      <div class="button" onclick="clearDisplay()">C</div>
-    </div>
-    <button onclick="checkGuess()" class="goButton">go</button>
-  </div>
-
-  <p id="feedback"></p>
 
   <script src="./script/script.js"></script>
 </body>
