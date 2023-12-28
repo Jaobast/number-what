@@ -19,7 +19,6 @@ function checkGuess() {
     changeGif.setAttribute("src", "./video/goodGirl.gif")
 
     const stayButton = document.getElementById('level01');
-      
     const nextButton = document.getElementById('level02');
 
   
