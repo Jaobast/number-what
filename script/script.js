@@ -15,6 +15,12 @@ function checkGuess() {
   let feedbackElement = document.getElementById('feedback');
   let display = inputElement.textContent.trim();
 
+  if (display === "") {
+    feedbackElement.innerHTML = "Please enter a number before pressing GO!";
+    feedbackElement.style.color = "red";
+    return;
+  }
+
   if (display === randomNumber.toString()) {
     feedbackElement.innerHTML = "";
     const changeCss = document.getElementById('css');
