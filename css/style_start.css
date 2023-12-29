@@ -22,7 +22,7 @@ body {
     width: 100%;
     top: 65%;
     left: 0;
-    z-index: 100;
+    z-index: 2;
 }
 
 img{
@@ -67,9 +67,10 @@ button{
     border-style: none;
     background-color: rgba(0, 128, 255, 0);
     color: #97b5fb;
-    margin: 20px;
-    z-index: 1000;
-    bottom: -80px;
+    top:65%;
+    z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .backButton{
@@ -81,9 +82,9 @@ button{
     border-style: none;
     background-color: white;
     color:white;
-    margin: 20px;
-    bottom: -80px;
-
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #playerName{
