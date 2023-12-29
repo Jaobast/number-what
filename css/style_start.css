@@ -42,69 +42,49 @@ label{
 }
 
 button{
-    width: 120px;
+    width: 150px;
     text-align: center;
     padding: 7px;
     border-radius: 50px;
     border-style: none;
     background-color: white;
     color: #97b5fb;
-    margin: 10px;
+    margin: 20px;
 }
 
 #playerName{
     border-style: none;
-    background-color: #fa897b;
+    background-color: white;
     text-align: center;
     height: 40px;
     width: 200px;
     border-radius: 5px;
+    color:#fa897b;
+    font-weight: bold;
 }
 
 #playerName::placeholder {
-    color: white;
+    color: #f4c0ba;
     font-weight: bold;
-  }
+}
 
 #video_goodGirl, .goodGirl_button, #game, #feedback{
     display: none;
 }
 
   @media (max-width: 800px) {
-    #numpad {
-      width: 50vw;
-      gap: 1.5vw;
-    }
-
-    #display {
-        width: 36vw;
-        height: 30px;
-        font-size: 4vw;
-    }
-
-    .goButton {
-        width: 12vw;
-        height: 12vw;
-        font-size: 6vw;
-    }
-  
-    .button {
-      width: 12vw;
-      height: 12vw;
-      font-size: 6vw;
-    }
 
     h1{
         font-size: 7vw;
     }
-    label{
+    label, button{
         font-size: 4.1vw;
     }
     #feedback{
         font-size: 4vw;
         width: 100vw;
     }
-    #playerName::placeholder {
+    #playerName::placeholder, #playerName{
         font-size: 5vw;
       }
   }
