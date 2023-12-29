@@ -64,8 +64,18 @@ button{
     padding: 7px;
     border-radius: 50px;
     border-style: none;
-    background-color: white;
     color: #97b5fb;
+    margin: 20px;
+    z-index: 110;
+}
+
+.backButton{
+    width: 150px;
+    text-align: center;
+    padding: 7px;
+    border-radius: 50px;
+    border-style: none;
+    background-color: white;
     margin: 20px;
 }
 
