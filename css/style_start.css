@@ -19,11 +19,15 @@ body {
 
 #foregroundImage {
     position: absolute;
-    width: 100vw;
-    height: auto;
+    width: 100%;
     top: 50%;
     left: 0;
     z-index: 100;
+}
+
+img{
+    width: 100%;
+    height: auto;
 }
 
 #titel {
