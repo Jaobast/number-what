@@ -67,7 +67,7 @@ button{
     border-style: none;
     background-color: rgba(0, 128, 255, 0);
     color: #97b5fb;
-    top:65%;
+    top:75%;
     z-index: 3;
     left: 50%;
     transform: translateX(-50%);
@@ -82,7 +82,7 @@ button{
     border-style: none;
     background-color: white;
     color:white;
-    top: 65%;
+    top: 75%;
     left: 50%;
     transform: translateX(-50%);
 }
