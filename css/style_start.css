@@ -20,7 +20,7 @@ body {
 #foregroundImage {
     position:absolute;
     width: 100%;
-    top: 72%;
+    top: 65%;
     left: 0;
     z-index: 2;
 }
