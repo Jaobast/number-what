@@ -56,27 +56,35 @@ label{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: aquamarine;
 }
 
 button{
+    position: absolute;
     width: 150px;
     text-align: center;
     padding: 7px;
     border-radius: 50px;
     border-style: none;
+    background-color: rgba(0, 128, 255, 0);
     color: #97b5fb;
     margin: 20px;
-    z-index: 110;
+    z-index: 1000;
+    bottom: -80px;
 }
 
 .backButton{
+    position: absolute;
     width: 150px;
     text-align: center;
     padding: 7px;
     border-radius: 50px;
     border-style: none;
     background-color: white;
+    color:white;
     margin: 20px;
+    bottom: -80px;
+
 }
 
 #playerName{
