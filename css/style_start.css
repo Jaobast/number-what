@@ -18,7 +18,7 @@ body {
 }
 
 #foregroundImage {
-    position: absolute;
+    position:absolute;
     width: 100%;
     top: 72%;
     left: 0;
