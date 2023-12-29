@@ -12,6 +12,7 @@ body {
     background-color: #97b5fb;
     background: url('../img/startBackground.jpg');
     background-size: cover;
+    background-position: 100% 14%;
     height : 100vh;
     height: -webkit-fill-available;
 }
@@ -42,7 +43,7 @@ img{
 }
 
 label{
-    color: white;
+    color: rgba(0, 128, 255, 0);
     font-size: max(45px, 3vw);
     margin: 10px;
 }
