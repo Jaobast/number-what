@@ -23,6 +23,7 @@ function generateRandomNumber() {
     }
     return bombNumbers;
   }  console.log(randomBombe)
+  document.getElementById("test_bombe").innerHTML = randomBombe;
 
 
     function checkGuess() {
@@ -130,6 +131,8 @@ function level02() {
   level = "level02";
   randomNumber = generateRandomNumber();
   attempts = 7;
+  randomBombe = generateRandomBombe ();
+  explosions = 3;
   showLevel3Button = true;
 
   const changeCss = document.getElementById('css');
@@ -149,6 +152,8 @@ function level02() {
 
   clearDisplay();
   console.log(randomNumber);
+  console.log(randomBombe);
+  document.getElementById("test_bombe").innerHTML = randomBombe;
 }
 
 
@@ -156,6 +161,8 @@ function level03() {
   level = "level03";
   randomNumber = generateRandomNumber();
   attempts = 5;
+  randomBombe = generateRandomBombe ();
+  explosions = 3;
   showLevel3Button = true;
       
   const changeCss = document.getElementById('css');
@@ -179,5 +186,7 @@ function level03() {
       
   clearDisplay();
   console.log(randomNumber);
+  console.log(randomBombe);
+  document.getElementById("test_bombe").innerHTML = randomBombe;
 }   
    
