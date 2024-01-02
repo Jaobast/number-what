@@ -153,8 +153,7 @@ function level02() {
   clearDisplay();
   console.log(randomNumber);
   console.log(randomBombe);
-  document.getElementById("test_bombe").innerHTML = randomNumber + "//" + randomBombe;
-}
+  document.getElementById("test_bombe").innerHTML = randomNumber + " // " + randomBombe;}
 
 
 function level03() {
@@ -187,6 +186,6 @@ function level03() {
   clearDisplay();
   console.log(randomNumber);
   console.log(randomBombe);
-  document.getElementById("test_bombe").innerHTML = randomNumber + "//" + randomBombe;
+  document.getElementById("test_bombe").innerHTML = randomNumber + " // " + randomBombe;
 }   
    
