@@ -31,7 +31,7 @@ function generateRandomNumber() {
       let feedbackElement = document.getElementById('feedback');
       let display = parseInt(inputElement.textContent.trim());
     
-      if (display === "") {
+      if (isNaN(display)) {
         feedbackElement.innerHTML = "Please enter a number before pressing GO!";
         feedbackElement.style.color = "red";
         return;
