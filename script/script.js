@@ -23,7 +23,7 @@ function generateRandomNumber() {
     }
     return bombNumbers;
   }  console.log(randomBombe)
-  document.getElementById("test_bombe").innerHTML = randomBombe;
+  document.getElementById("test_bombe").innerHTML = randomNumber + " // " + randomBombe;
 
 
     function checkGuess() {
@@ -153,7 +153,7 @@ function level02() {
   clearDisplay();
   console.log(randomNumber);
   console.log(randomBombe);
-  document.getElementById("test_bombe").innerHTML = randomBombe;
+  document.getElementById("test_bombe").innerHTML = randomNumber + "//" + randomBombe;
 }
 
 
@@ -187,6 +187,6 @@ function level03() {
   clearDisplay();
   console.log(randomNumber);
   console.log(randomBombe);
-  document.getElementById("test_bombe").innerHTML = randomBombe;
+  document.getElementById("test_bombe").innerHTML = randomNumber + "//" + randomBombe;
 }   
    
