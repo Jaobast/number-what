@@ -22,6 +22,11 @@ body {
 
 }
 
+#level01, #level02, #level03, .video_goodGirl{
+    color: rgba(0, 128, 255, 0);
+    display: none;
+}
+
 #titel {
     width: 100%;
     display: flex;
